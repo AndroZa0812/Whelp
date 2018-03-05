@@ -9,7 +9,7 @@ import io.ebean.Model;
 
 @Entity
 @Table(name="users")
-public class users extends Model {
+public class User extends Model {
 	@Id
 	@Column(name="userID")
 	private int id;
