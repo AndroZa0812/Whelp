@@ -1,0 +1,200 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Whelp</title>
+
+    <!--Angular-->
+    <script src="https://code.angularjs.org/1.6.4/angular.js"></script>
+
+    <!--Anglar-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-route.js"></script>
+
+    <!--Jquery-->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <!--Bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <!--Styles-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.4.0/css/bootstrap-rtl.css">
+
+     <!-- Custom styles for this template -->
+     <link href="../stylesheets/half-slider.css" rel="stylesheet">
+
+     <link href="../stylesheets/main.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue fixed-top">
+        <div >
+        <image class="main-icon navbar-brand" style="width:5%;" src="../images/icon.png"></image>  
+        <a class="navbar-brand" href="#">Whelp</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <!-- <li class="nav-item active">
+                <a class="nav-link" href="#">בית
+                   <span class="sr-only">(current)</span>
+                </a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">בית</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">לאירועים</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">התחברות</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#registrationModal">הרשמה</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+      <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url('../images/1.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>First Slide</h3>
+                <p>This is a description for the first slide.</p>
+              </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('../images/2.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Second Slide</h3>
+                <p>This is a description for the second slide.</p>
+              </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('../images/3.png')">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Third Slide</h3>
+                <p>This is a description for the third slide.</p>
+              </div>
+            </div>
+             <!-- Slide Three - Set the background image for this slide in the line below -->
+             <div class="carousel-item" style="background-image: url('../images/4.jpg')">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Forth Slide</h3>
+                  <p>This is a description for the forth slide.</p>
+                </div>
+              </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </header>
+  
+      <!-- Page Content -->
+      <section class="py-5">
+        <div class="container centered-container">
+          <h1>ברוכים הבאים ל Whelp</h1>
+          <p>אנחנו רוצים אתכם, את האנשים הטובים שרוצים לתת למי שאין לו או למי שלא יכול, את האנשים שרוצים לעזור לכלל.</p>
+        </div>
+      </section>
+  
+      <!-- Footer -->
+      <footer class="py-5 bg-blue">
+        <div class="container">
+          <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        </div>
+        <!-- /.container -->
+      </footer>
+
+      <!--Modals-->
+      <!-- Modal -->
+    <div class="modal fade" id="loginModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">התחברות</h4>
+            </div>
+            <div class="modal-body">
+              <form style="text-align:right">
+                <div class="row">
+                    <div class="col-md-2">משתמש:</div>
+                    <div  class="col-md-10"><input type="text" class="form-control" required/></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">סיסמה:</div>
+                    <div  class="col-md-10"><input type="password" class="form-control" required/></div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+    <div class="modal fade" id="registrationModal" role="dialog">
+            <div class="modal-dialog">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">הרשמה</h4>
+                </div>
+                <div class="modal-body">
+                    <form style="text-align:right">   
+                        <div class="row">
+                                <div class="col-md-4">דואר אלקטרוני:</div>
+                                <div  class="col-md-8"><input type="text" class="form-control" required/></div>
+                        </div>    
+                        <div class="row">
+                                <div class="col-md-2">משתמש:</div>
+                                <div  class="col-md-10"><input type="text" class="form-control" required/></div>
+                        </div>    
+                        <div class="row">
+                                <div class="col-md-2">סיסמה:</div>
+                                <div  class="col-md-10"><input type="password" class="form-control" required/></div>
+                        </div>    
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              
+            </div>
+        </div>
+</body>
+</html>

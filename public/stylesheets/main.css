@@ -1,0 +1,15 @@
+.centered-container {
+    text-align: center;
+}
+
+.bg-blue {
+    background-color: #35b5e6;
+}
+
+.carousel-indicators {
+    direction: ltr;
+    right: 0;
+    left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+}
